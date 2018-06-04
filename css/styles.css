@@ -6,3 +6,28 @@ html, body{
   margin: 0;
   padding: 0;
 }
+
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+
+header, h1{
+  font-size: px;
+}
+
+#grid1{
+  background-color: gray
+}
+
+#map_img{
+  border: 2px rgb(248, 244, 244) solid;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+#grid_content{
+  text-align: left;
+  font-size: 24px;
+  margin-top: 45px;
+}
