@@ -1,5 +1,6 @@
 $("button#location").click(function(event){
   event.preventDefault();
+  initMap();
   $("#header").hide();
   $("input#map").show();
 })
@@ -34,10 +35,15 @@ $("button#location").click(function(event){
           lng: position.coords.longitude
         };
 
+        var myLink = "https://www.google.com/maps/@"+position.coords.latitude+","+position.coords.longitude+",16z";
+        console.log (myLink);
+        alert("Your coordinates are" + "," + myLink);
+
         infoWindow.setPosition(pos);
         infoWindow.setContent('Location found.');
         infoWindow.open(map);
         map.setCenter(pos);
+        map.setZoom(20);
       }, function() {
         handleLocationError(true, infoWindow, map.getCenter());
       });
