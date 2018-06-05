@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -10,34 +9,48 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
   </head>
-  
+
   <body>
 
     <!-- Header -->
-<header class="w3-container w3-red w3-center" style="padding:128px 16px">
-    <h1 class="w3-margin w3-jumbo">FollowMe</h1>
-    <a href="form.html" <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">New? <br>Click Here to Register</button></a><br>
-    <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Show Location</button>
-  </header>
-  
-  <!-- First Grid -->
-  <div id="grid1" class="w3-row-padding w3-padding-64 w3-container">
-    <div class="w3-content">
-      <div class="w3-twothird">
-        <img id="map_img" src="screenshot1.png" alt="A picture of a map">
-      </div>
-  
-      <div id="grid_content" class="w3-third w3-center">
-        FollowMe allows the one you care about to keep track of your whereabouts. 
-        Easy to use, just send a link and your contact gets a map with your location on it.
-      </div>
+  <div id="header">
+    <header class="w3-container w3-red w3-center" style="padding:128px 16px">
+      <h1 class="w3-margin w3-jumbo">FollowMe</h1>
+      <a href="userForm.html" <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">New? <br>Click Here to Register</button></a><br>
+      <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" id="location">Show Location</button>
+      <!--<div id="register">
+        <p id="send"> This is a trial email</p>
+        <form id="subscribe" method="post" action="">
+          <div class="form-control">
+            <label for="exampleInputName">Sponsor Name</label>
+              <input required type="text"  id="sponsors" placeholder="email">
+              <button onclick="sendMail(); return false">Send Email</button>
+          </div>
+        </form>
+      </div>-->
+    </header>
+  </div>
+  <div id="map"></div>
+  <div class="row" id="sendLocation">
+    <div class=" register col">
+      <form id="subscribe" method="post" action="">
+        <div class="form-control">
+          <label for="exampleInputName">Sponsor Name</label>
+            <input required type="text"  id="sponsors" placeholder="email">
+          <button class="btn-lg"onclick="sendMail(); return false">Send Email</button>
+        </div>
+      </form>
+    </div>
+    <div>
+      <button class="col"><a href="index.html" <button class="w3-buttonw3-padding-large w3-large w3-margin-top ">Back home</button></a>
     </div>
   </div>
 
-    <div id="map"></div>
-    <script src="js/scripts.js"></script>
-    <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0QDyAnsN38ZHZ6dhDacors7Ap__tn_Hs&callback=initMap"async defer>
-    </script>
+  <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0QDyAnsN38ZHZ6dhDacors7Ap__tn_Hs&callback=initMap"async defer>
+  </script>
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+
   </body>
 </html>
