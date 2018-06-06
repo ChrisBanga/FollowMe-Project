@@ -14,6 +14,34 @@
   <body>
 
     <!-- Header -->
+ chris
+  <div id="header">
+    <header class="w3-container w3-red w3-center" style="padding:128px 16px">
+      <h1 class="w3-margin w3-jumbo">FollowMe</h1>
+      <a href="userForm.html" <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">New? <br>Click Here to Register</button></a><br>
+      <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" id="location">Show Location</button>
+    </header>
+  </div>
+  <div id="map"></div>
+  <div id="showLink" class="col-md-12">
+    <button id="toLink">See my coordinates</button>
+  </div>
+  <div class="row" id="sendLocation">
+    <div class=" register col-12">
+      <form id="subscribe" method="post" action="">
+        <div class="form-control">
+            <input required type="text"  id="mailTo" placeholder="email">
+            <textarea id="subjectText">
+            </textarea>
+        </div>
+      </form>
+      <button class="btn-lg"onclick="sendMail(); return false">Send my location</button>
+    </div>
+    <div class="col-12">
+      <button class="col"><a href="index.html" <button class="w3-buttonw3-padding-large w3-large w3-margin-top ">Back home</button></a>
+    </div>
+  </div>
+
     <div id="header">
       <header class="w3-container w3-red w3-center" style="padding:128px 16px">
         <h1 class="w3-margin w3-jumbo">FollowMe</h1>
@@ -51,6 +79,7 @@
         </a>
       </div>
     </div>
+ master
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0QDyAnsN38ZHZ6dhDacors7Ap__tn_Hs&callback=initMap" async
       defer>
