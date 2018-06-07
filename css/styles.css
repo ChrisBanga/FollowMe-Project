@@ -36,3 +36,67 @@ header, h1{
   font-size: 24px;
   margin-top: 45px;
 }
+
+#mailTo{
+  background-color: rgb(121, 115, 115);
+  border-radius: 0.19rem;
+  outline: none;
+  border: 1px solid #cdcdcd;
+  border-color: rgba(0, 0, 0, .15);
+  margin-left: 275px;
+}
+
+#mailTo, placeholder{
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  text-align: center;
+}
+
+#actions{
+  background-color: #f44336;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+}
+
+#map{
+  border-bottom: 2px solid #000000;
+  border-top: 2px solid #000000;
+}
+
+#subjectText{
+  height: 30px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+#header{
+  margin-bottom: 10px;
+  border-bottom: 2px solid #000000;
+  margin-top: 10px;
+  border-top: 2px solid #000000;
+}
+
+#showLink{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#sendLocation{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#homeButton{
+  margin-bottom: 15px;
+  
+}
+
+.btn-outline-info{
+  color: #000000;
+}
+
+#successButton{
+  margin-left: 20px;
+}
